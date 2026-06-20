@@ -1,6 +1,5 @@
 -- =====================================================
 -- Orphanage & Child Adoption Management System
--- Database Schema (Oracle SQL)
 -- Student: Mukta Rani Baishnob | ID: 2207056
 -- =====================================================
 
