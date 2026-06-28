@@ -5,11 +5,10 @@
 -- =====================================================
  
 SET SERVEROUTPUT ON;
- 
- 
+SET LINESIZE 200
+SET PAGESIZE 50
 
 -- SECTION 1: VIEWS
-
  
 -- View 1: All available children
 CREATE OR REPLACE VIEW vw_available_children AS
