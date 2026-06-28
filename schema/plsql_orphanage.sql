@@ -7,7 +7,19 @@
 SET SERVEROUTPUT ON;
 SET LINESIZE 200
 SET PAGESIZE 50
+ COLUMN name FORMAT A15
+ COLUMN child_name FORMAT A15
+ COLUMN family_name FORMAT A18
+ COLUMN donor_name FORMAT A20
+ COLUMN health_status FORMAT A15
+ COLUMN breakfast FORMAT A20
+ COLUMN lunch FORMAT A20
+ COLUMN dinner FORMAT A20
+ COLUMN nutrition_note FORMAT A18
+ COLUMN item_name FORMAT A15
+ COLUMN category FORMAT A10
 
+ 
 -- SECTION 1: VIEWS
  
 -- View 1: All available children
@@ -128,7 +140,7 @@ SELECT * FROM vw_low_supply;
  
 -- Test: Procedures
 BEGIN
-    sp_add_child(5, 'Nila Parvin', DATE '2017-08-10', 'F', 'Healthy', 'Mother deceased');
+    sp_add_child(5, 'Maya Roy', DATE '2017-08-10', 'F', 'Healthy', 'Lost');
    
     sp_show_all_children;
 END;
